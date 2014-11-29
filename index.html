@@ -1,0 +1,109 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Widlsky</title>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:300,600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script>
+		$(function() {
+		$( "#tabs" ).tabs();
+		});
+	</script>
+	<style>
+	@media only screen and (max-width: 1050px) {
+		.shidden{
+			display:none;
+		}
+	}
+	
+	@media only screen and (max-width: 1180px) {
+		.mhidden{
+			display:none;
+		}
+		li.gh{
+			margin-left:0px;
+		}
+	}
+	
+	@media only screen and (min-width: 1180px) {
+		.bhidden{
+			display:none;
+		}
+	}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="in">
+			<div class="wrap">
+				<img src="img/Profile.jpg" alt="my_photo" style="height:248px; border:1px solid black;">
+			</div>
+			<div class="wrap">
+			
+				<h1><span class="mhidden">This is </span>Wildsky Fann<span class="shidden">'s Self-Introduction</span></h1>
+				<!-- 雖然好像破壞格式了, 但不加大標題好像就有點怪怪的XD -->
+				
+				<div class="contact">
+					<ul class="mhidden">
+						<a href="http://wildsky.cc" target="_blank"><li class="my">website</li></a>
+						<a href="http://twitter.com/wi1d5ky" target="_blank"><li class="ttr">twitter</li></a>
+						<a href="http://github.com/wi1d5ky" target="_blank"><li class="gh">github</li></a>
+						<a href="http://fb.me/wi1d5ky" target="_blank"><li class="fb">facebook</li></a>
+						<!--<a href="mailto:poppin.wildsky@gmail.com"><li class="gm">Gmail</li></a>-->
+					</ul>
+					
+					<ul class="bhidden">
+						<a href="http://wildsky.cc" target="_blank"><li class="my">website</li></a>
+						<a href="http://twitter.com/wi1d5ky" target="_blank"><li class="ttr">twitter</li></a>
+					</ul>
+					<ul class="bhidden">
+						<a href="http://github.com/wi1d5ky" target="_blank"><li class="gh">github</li></a>
+						<a href="http://fb.me/wi1d5ky" target="_blank"><li class="fb">facebook</li></a>
+						<!--<a href="mailto:poppin.wildsky@gmail.com"><li class="gm">Gmail</li></a>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		
+		<div class="in">
+		<div id="tabs">
+			<ul>
+				<li><a href="#tabs-1">關於我現在的英文名字</a></li>
+				<li><a href="#tabs-2">對於未來的想法</a></li>
+				<li><a href="#tabs-3">關於這個網頁</a></li>
+			</ul>
+			<div id="tabs-1" class="wrap">
+				<h2>關於我現在的英文名字</h2>
+				<p>
+						這名字出自高一時跟同學一同組了個以 Sky 為名字結尾的團,
+
+						雖然沒出過甚麼神奇的任務, 但也莫名地成為了我日後的英文名字
+				</p>
+			</div>
+			<div id="tabs-2" class="wrap">
+				<h2>對於未來的想法</h2>
+				<p>
+					目前是考慮往前端發展, <del>但覺得後端賺比較多錢</del>,應該也要練後端,
+					
+					簡單的說就是還在摸索! 努力朝網路的發展前進中~~
+				</p>
+			</div>
+			<div id="tabs-3" class="wrap">
+				<h2>關於這個網頁</h2>
+				<p>
+					其實是我親愛的直屬大大連哥但要我們做的, 就算他之後不會把這個網站放到甚麼神奇的地方,
+					<br />
+					我應該也會把它放到學校或系上的主機<del>佔個空間</del>, 也算是一個練習成果的感覺!
+				</p>
+			</div>
+		</div>
+		</div>
+	</div>
+</body>
+</html>

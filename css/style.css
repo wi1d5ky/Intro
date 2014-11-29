@@ -1,0 +1,102 @@
+
+@font-face {
+    font-family: "Pico";
+    src: url(../font/PICOBLA.TTF);
+}
+
+@font-face {
+    font-family: "College";
+    src: url(../font/COLLEGIA.ttf);
+}
+
+	
+body{
+	background:url('../img/bg.jpg') center center no-repeat fixed;
+	-moz-background-size: cover;
+	background-size: cover;
+	color:#221D23;
+	padding:0 25px;
+}
+
+div.header {
+	background:rgba(171, 171, 171, 0.3);
+	padding:20px;
+	margin:20px;
+}
+
+div.in{
+	background:rgba(171, 171, 171, 0.7);
+}
+
+div.container{
+	background:rgba(171, 171, 171, 0.3);
+	padding:20px;
+	margin:20px;
+}
+
+div.header h1{
+	color:white;
+	font-family: 'Raleway';
+	font-weight:300;
+	font-size:43px;
+	text-shadow:0px 0px 15px #555555;
+}
+
+div.wrap{
+	//background:red;
+	display:inline-block;
+	vertical-align:top;
+	margin:10px;
+	padding:10px;
+}
+
+div.contact ul{
+	padding-left:0px;
+}
+
+div.contact ul li{
+	width:85px;	
+	font-size:20px;
+	line-height:22px;
+	display:inline-block;
+	padding:15px;
+	list-style:none;
+	border-radius:15px;
+	text-align:center;
+}
+
+div.contact a{
+	padding-top:15px;
+	padding-bottom:15px;
+	color:white;
+	text-decoration:none;
+}
+
+li.my{
+	background-color:#689FC9;
+	font-family:'Raleway';
+	font-weight:600;
+}
+
+li.fb{
+	margin-left:20px;
+	background:url('../img/fb.png') repeat-x;
+	background-color:#3A5795;
+	font-family:Arial;
+	font-weight:600;
+}
+
+li.ttr{
+	margin-left:20px;
+	background-color:#55ACEE;
+	font-family:'Pico';
+	font-weight:600;
+}
+
+li.gh{
+	margin-left:20px;
+	color:white;
+	background-color:black;
+	font-family:'College';
+	font-weight:600;
+}

@@ -80,23 +80,38 @@ li.my{
 
 li.fb{
 	margin-left:20px;
-	background:url('../img/fb.png') repeat-x;
 	background-color:#3A5795;
 	font-family:Arial;
 	font-weight:600;
 }
 
 li.ttr{
-	margin-left:20px;
 	background-color:#55ACEE;
+	margin-left:20px;
 	font-family:'Pico';
 	font-weight:600;
 }
 
 li.gh{
 	margin-left:20px;
-	color:white;
 	background-color:black;
 	font-family:'College';
 	font-weight:600;
 }
+
+div.contact a:hover > li.my{
+	background-color:#78AFD9;
+}
+
+div.contact a:hover > li.fb{
+	background-color:#4A67a5;
+}
+
+div.contact a:hover > li.ttr{
+	background-color:#75BCFF;
+}
+
+div.contact a:hover > li.gh{
+	background-color:#454545;
+}
+

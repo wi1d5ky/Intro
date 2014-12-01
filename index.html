@@ -14,22 +14,31 @@
 		});
 	</script>
 	<style>
+	@media only screen and (min-width: 300px) {
+		div.contact div{
+			margin-left:0px;
+		}
+	}
 	@media only screen and (max-width: 1050px) {
 		.shidden{
 			display:none;
 		}
 	}
 	
-	@media only screen and (max-width: 1180px) {
+	@media only screen and (max-width: 1180px) {		
 		.mhidden{
 			display:none;
 		}
-		li.gh{
+		div.gh{
 			margin-left:0px;
 		}
 	}
 	
 	@media only screen and (min-width: 1180px) {
+		div.wrap{
+			margin:10px;
+			padding:10px;
+		}
 		.bhidden{
 			display:none;
 		}
@@ -49,20 +58,20 @@
 				
 				<div class="contact">
 					<ul class="mhidden">
-						<a href="http://wildsky.cc" target="_blank"><li class="my">website</li></a>
-						<a href="http://twitter.com/wi1d5ky" target="_blank"><li class="ttr">twitter</li></a>
-						<a href="http://github.com/wi1d5ky" target="_blank"><li class="gh">github</li></a>
-						<a href="http://fb.me/wi1d5ky" target="_blank"><li class="fb">facebook</li></a>
+						<li><div class="my"><a href="http://wildsky.cc" target="_blank">website</a></div></li>
+						<li><div class="ttr"><a href="http://twitter.com/wi1d5ky" target="_blank">twitter</a></div></li>
+						<li><div class="gh"><a href="http://github.com/wi1d5ky" target="_blank">github</a></div></li>
+						<li><div class="fb"><a href="http://fb.me/wi1d5ky" target="_blank">facebook</a></div></li>
 						<!--<a href="mailto:poppin.wildsky@gmail.com"><li class="gm">Gmail</li></a>-->
 					</ul>
 					
 					<ul class="bhidden">
-						<a href="http://wildsky.cc" target="_blank"><li class="my">website</li></a>
-						<a href="http://twitter.com/wi1d5ky" target="_blank"><li class="ttr">twitter</li></a>
+						<li><div class="my"><a href="http://wildsky.cc" target="_blank">website</a></div></li>
+						<li><div class="ttr"><a href="http://twitter.com/wi1d5ky" target="_blank">twitter</a></div></li>
 					</ul>
 					<ul class="bhidden">
-						<a href="http://github.com/wi1d5ky" target="_blank"><li class="gh">github</li></a>
-						<a href="http://fb.me/wi1d5ky" target="_blank"><li class="fb">facebook</li></a>
+						<li><div class="gh"><a href="http://github.com/wi1d5ky" target="_blank">github</a></div></li>
+						<li><div class="fb"><a href="http://fb.me/wi1d5ky" target="_blank">facebook</a></div></li>
 						<!--<a href="mailto:poppin.wildsky@gmail.com"><li class="gm">Gmail</li></a>-->
 					</ul>
 				</div>

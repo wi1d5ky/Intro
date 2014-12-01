@@ -26,6 +26,7 @@ div.header {
 
 div.in{
 	background:rgba(171, 171, 171, 0.7);
+	
 }
 
 div.container{
@@ -54,64 +55,70 @@ div.contact ul{
 	padding-left:0px;
 }
 
-div.contact ul li{
-	width:85px;	
+div.contact ul li{	
 	font-size:20px;
 	line-height:22px;
-	display:inline-block;
-	padding:15px;
 	list-style:none;
-	border-radius:15px;
+	display:inline-block;
 	text-align:center;
 }
 
 div.contact a{
-	padding-top:15px;
-	padding-bottom:15px;
+	width:85px;
 	color:white;
 	text-decoration:none;
+	padding:15px;
+	display:block;
 }
 
-li.my{
+div.my{
 	background-color:#689FC9;
+	border-radius:15px;
 	font-family:'Raleway';
 	font-weight:600;
 }
 
-li.fb{
+div.fb{
 	margin-left:20px;
+	border-radius:15px;
 	background-color:#3A5795;
 	font-family:Arial;
 	font-weight:600;
 }
 
-li.ttr{
+div.ttr{
 	background-color:#55ACEE;
+	border-radius:15px;
 	margin-left:20px;
 	font-family:'Pico';
 	font-weight:600;
 }
 
-li.gh{
+div.gh{
 	margin-left:20px;
 	background-color:black;
+	border-radius:15px;
 	font-family:'College';
 	font-weight:600;
 }
 
-div.contact a:hover > li.my{
+div.my:hover {
 	background-color:#78AFD9;
+	box-shadow:0px 0px 15px 2px #78AFD9;
 }
 
-div.contact a:hover > li.fb{
+div.fb:hover{
 	background-color:#4A67a5;
+	box-shadow:0px 0px 15px 2px #4A67a5;
 }
 
-div.contact a:hover > li.ttr{
+div.ttr:hover{
 	background-color:#75BCFF;
+	box-shadow:0px 0px 15px 2px #75BCFF;
 }
 
-div.contact a:hover > li.gh{
+div.gh:hover{
 	background-color:#454545;
+	box-shadow:0px 0px 15px 5px #454545;
 }
 

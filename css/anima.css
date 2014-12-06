@@ -149,17 +149,27 @@ div.mike:hover div.Pupil{
 		left:10px;
 		z-index:3;
 	}
-	20%{
+	30%{
 		background:#00A002;
 		height:36px;
 		width:36px;
 		border-radius:40px;
 		position:absolute;
-		top:10px;
-		left:20px;
+		top:5px;
+		left:18px;
 		z-index:3;
 	}
-	100% {
+	50%{
+		background:#00A002;
+		height:36px;
+		width:36px;
+		border-radius:40px;
+		position:absolute;
+		top:13px;
+		left:2px;
+		z-index:3;
+	}
+	80% {
 		background:#00A002;
 		height:36px;
 		width:36px;

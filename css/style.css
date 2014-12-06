@@ -1,4 +1,4 @@
-
+/*
 @font-face {
     font-family: "Pico";
     src: url(../font/PICOBLA.TTF);
@@ -8,14 +8,19 @@
     font-family: "College";
     src: url(../font/COLLEGIA.ttf);
 }
+*/
 
+img{
+	height:auto;
+}
 	
 body{
 	background:url('https://farm8.staticflickr.com/7582/15328861334_a973364016_c.jpg') center center no-repeat fixed;
 	-moz-background-size: cover;
 	background-size: cover;
 	color:#221D23;
-	padding:0 25px;
+	font-family: 'Noto Sans', sans-serif;
+	padding:0 25px	;
 }
 
 div.header {
@@ -26,7 +31,6 @@ div.header {
 
 div.in{
 	background:rgba(171, 171, 171, 0.7);
-	
 }
 
 div.container{
@@ -51,7 +55,7 @@ div.wrap{
 	padding:10px;
 }
 
-div.contact ul{
+ul{
 	padding-left:0px;
 }
 
@@ -69,6 +73,22 @@ div.contact a{
 	text-decoration:none;
 	padding:15px;
 	display:block;
+}
+
+ul.tabs{
+	margin-bottom:0;
+}
+
+ul.tabs li{
+	display:inline-block;
+	list-style-type:none;
+}
+ul.tabs li a{
+	background:rgba(171, 171, 171, 0.3);
+	color:#221D23;
+	cursor: grab;
+	text-decoration:none;
+	padding:10px;
 }
 
 

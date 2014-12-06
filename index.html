@@ -4,292 +4,10 @@
 	<meta charset="UTF-8">
 	<title>Widlsky</title>
 	<link href='http://fonts.googleapis.com/css?family=Raleway:300,600' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/jquery-1.10.2.js"></script>
-	<script src="js/jquery-ui.js"></script>
-	<script>
-		$(function() {
-		$( "#tabs" ).tabs();
-		});
-	</script>
-	
-	<style>
-	
-	/* ==============  my animation START  ============== */
-	
-	div.my{
-		background-color:#689FC9;
-		border-radius:15px;
-		font-family:'Raleway';
-		font-weight:600;
-		-webkit-animation: anime_my 0.5s; /* Chrome, Safari, Opera */
-		animation: anime_my 0.5s;
-	}
-	
-	/* Chrome, Safari, Opera */
-	@-webkit-keyframes anime_my {
-		0% {
-			background: #98cFf9;
-			box-shadow:0px 0px 15px 2px #98cFf9;
-		}
-		100% {
-			background-color:#689FC9;
-			box-shadow:none;
-		}
-	}
-	
-	/* Standard syntax */
-	@keyframes anime_my {	
-		0% {
-			background: #98cFf9;
-			box-shadow:0px 0px 15px 2px #98cFf9;
-		}
-		100% {
-			background-color:#689FC9;
-			box-shadow:none;
-		}
-	} 
-	
-	div.my:hover {
-		background-color:#98cFf9;
-		box-shadow:0px 0px 15px 2px #98cFf9;
-		-webkit-animation: anime_my_hover 0.5s; /* Chrome, Safari, Opera */
-		animation: anime_my_hover 0.5s;
-	}
-	
-	/* Chrome, Safari, Opera */
-	@-webkit-keyframes anime_my_hover {
-		0% {
-			background-color:#689FC9;
-			box-shadow:none;
-		}
-		100% {
-			background: #98cFf9;
-			box-shadow:0px 0px 15px 2px #98cFf9;
-		}
-	}
-	
-	/* Standard syntax */
-	@keyframes anime_my_hover {	
-		0% {
-			background-color:#689FC9;
-			box-shadow:none;
-		}
-		100% {
-			background: #98cFf9;
-			box-shadow:0px 0px 15px 2px #98cFf9;
-		}
-	} 
-
-	/* ==============  my animation END  ============== */
-	
-	/* ==============  fb animation START  ============== */
-	
-	div.fb{
-		background-color:#3A5795;
-		margin-left:20px;
-		border-radius:15px;
-		font-family:Arial;
-		font-weight:600;
-		-webkit-animation: anime_fb 0.5s; /* Chrome, Safari, Opera */
-		animation: anime_fb 0.5s;
-	}
-	
-	/* Chrome, Safari, Opera */
-	@-webkit-keyframes anime_fb {
-		0% {
-			background: #7A97d5;
-			box-shadow:0px 0px 15px 2px #7A97d5;
-		}
-		100% {
-			background-color:#3A5795;
-			box-shadow:none;
-		}
-	}
-	
-	/* Standard syntax */
-	@keyframes anime_fb {	
-		0% {
-			background: #7A97d5;
-			box-shadow:0px 0px 15px 2px #7A97d5;
-		}
-		100% {
-			background-color:#3A5795;
-			box-shadow:none;
-		}
-	} 
-	
-	div.fb:hover{
-		background-color:#7A97d5;
-		box-shadow:0px 0px 15px 2px #7A97d5;
-		-webkit-animation: anime_fb_hover 0.5s; /* Chrome, Safari, Opera */
-		animation: anime_fb_hover 0.5s;
-	}
-	
-	/* Chrome, Safari, Opera */
-	@-webkit-keyframes anime_fb_hover {
-		0% {
-			background-color:#3A5795;
-			box-shadow:none;
-		}
-		100% {
-			background: #7A97d5;
-			box-shadow:0px 0px 15px 2px #7A97d5;
-		}
-	}
-	
-	/* Standard syntax */
-	@keyframes anime_fb_hover {	
-		0% {
-			background-color:#3A5795;
-			box-shadow:none;
-		}
-		100% {
-			background: #7A97d5;
-			box-shadow:0px 0px 15px 2px #7A97d5;
-		}
-	} 
-	/* ==============  fb animation END  ============== */
-	
-	/* ==============  ttr animation START  ============== */
-	
-	div.ttr{
-		background-color:#55ACEE;
-		border-radius:15px;
-		margin-left:20px;
-		font-family:'Pico';
-		font-weight:600;
-		-webkit-animation: anime_ttr 0.5s; /* Chrome, Safari, Opera */
-		animation: anime_ttr 0.5s;
-	}
-	
-	/* Chrome, Safari, Opera */
-	@-webkit-keyframes anime_ttr {
-		0% {
-			background: #a5eCFF;
-			box-shadow:0px 0px 15px 2px #a5eCFF;
-		}
-		100% {
-			background-color:#55ACEE;
-			box-shadow:none;
-		}
-	}
-	
-	/* Standard syntax */
-	@keyframes anime_ttr {	
-		0% {
-			background: #a5eCFF;
-			box-shadow:0px 0px 15px 2px #a5eCFF;
-		}
-		100% {
-			background-color:#55ACEE;
-			box-shadow:none;
-		}
-	} 
-	
-	div.ttr:hover{
-		background-color:#a5eCFF;
-		box-shadow:0px 0px 15px 2px #a5eCFF;
-		-webkit-animation: anime_ttr_hover 0.5s; /* Chrome, Safari, Opera */
-		animation: anime_ttr_hover 0.5s;
-	}
-	
-	/* Chrome, Safari, Opera */
-	@-webkit-keyframes anime_ttr_hover {
-		0% {
-			background-color:#55ACEE;
-			box-shadow:none;
-		}
-		100% {
-			background: #a5eCFF;
-			box-shadow:0px 0px 15px 2px #a5eCFF;
-		}
-	}
-	
-	/* Standard syntax */
-	@keyframes anime_ttr_hover {	
-		0% {
-			background-color:#55ACEE;
-			box-shadow:none;
-		}
-		100% {
-			background: #a5eCFF;
-			box-shadow:0px 0px 15px 2px #a5eCFF;
-		}
-	} 
-	/* ==============  ttr animation END  ============== */
-	
-	/* ==============  gh animation START  ============== */
-	
-	div.gh{
-		background-color:#000000;
-		margin-left:20px;
-		border-radius:15px;
-		font-family:'College';
-		font-weight:600;
-		-webkit-animation: anime_gh 0.5s; /* Chrome, Safari, Opera */
-		animation: anime_gh 0.5s;
-	}
-	
-	/* Chrome, Safari, Opera */
-	@-webkit-keyframes anime_gh {
-		0% {
-			background: #ababab;
-			box-shadow:0px 0px 15px 2px #ababab;
-		}
-		100% {
-			background-color:#000000;
-			box-shadow:none;
-		}
-	}
-	
-	/* Standard syntax */
-	@keyframes anime_gh {	
-		0% {
-			background: #ababab;
-			box-shadow:0px 0px 15px 2px #ababab;
-		}
-		100% {
-			background-color:#000000;
-			box-shadow:none;
-		}
-	} 
-	
-	div.gh:hover{
-		background-color:#ababab;
-		box-shadow:0px 0px 15px 2px #ababab;
-		-webkit-animation: anime_gh_hover 0.5s; /* Chrome, Safari, Opera */
-		animation: anime_gh_hover 0.5s;
-	}
-	
-	/* Chrome, Safari, Opera */
-	@-webkit-keyframes anime_gh_hover {
-		0% {
-			background-color:#000000;
-			box-shadow:none;
-		}
-		100% {
-			background: #ababab;
-			box-shadow:0px 0px 15px 2px #ababab;
-		}
-	}
-	
-	/* Standard syntax */
-	@keyframes anime_gh_hover {	
-		0% {
-			background-color:#000000;
-			box-shadow:none;
-		}
-		100% {
-			background: #ababab;
-			box-shadow:0px 0px 15px 2px #ababab;
-		}
-	} 
-	/* ==============  gh animation END  ============== */
-	
-	
-	</style>
+	<link rel="stylesheet" href="css/contact.css">
+	<link rel="stylesheet" href="css/anima.css">
 	
 	<style>
 	@media only screen and (min-width: 300px) {
@@ -333,39 +51,36 @@
 			<div class="wrap">
 			
 				<h1><span class="mhidden">This is </span>Wildsky Fann<span class="shidden">'s Self-Introduction</span></h1>
-				<!-- 雖然好像破壞格式了, 但不加大標題好像就有點怪怪的XD -->
 				<div class="contact">
 					<ul class="mhidden">
 						<li><div class="my"><a href="http://wildsky.cc" target="_blank">website</a></div></li>
-						<li><div class="ttr"><a href="http://twitter.com/wi1d5ky" target="_blank">twitter</a></div></li>
-						<li><div class="gh"><a href="http://github.com/wi1d5ky" target="_blank">github</a></div></li>
+						<li><div class="ttr"><a href="http://twitter.com/wi1d5ky" target="_blank"><img src="img/twitter.png" alt="twitter" width="90px"></a></div></li>
+						<li><div class="gh"><a href="http://github.com/wi1d5ky" target="_blank"><img src="img/github.png" alt="github" width="90px"></a></div></li>
 						<li><div class="fb"><a href="http://fb.me/wi1d5ky" target="_blank">facebook</a></div></li>
-						<!--<a href="mailto:poppin.wildsky@gmail.com"><li class="gm">Gmail</li></a>-->
 					</ul>
 					
 					<ul class="bhidden">
 						<li><div class="my"><a href="http://wildsky.cc" target="_blank">website</a></div></li>
-						<li><div class="ttr"><a href="http://twitter.com/wi1d5ky" target="_blank">twitter</a></div></li>
+						<li><div class="ttr"><a href="http://twitter.com/wi1d5ky" target="_blank"><img src="img/twitter.png" alt="twitter" width="90px"></a></div></li>
 					</ul>
 					<ul class="bhidden">
-						<li><div class="gh"><a href="http://github.com/wi1d5ky" target="_blank">github</a></div></li>
+						<li><div class="gh"><a href="http://github.com/wi1d5ky" target="_blank"><img src="img/github.png" alt="github" width="90px"></a></div></li>
 						<li><div class="fb"><a href="http://fb.me/wi1d5ky" target="_blank">facebook</a></div></li>
-						<!--<a href="mailto:poppin.wildsky@gmail.com"><li class="gm">Gmail</li></a>-->
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="container">
-		
+		<ul id="choice" class="tabs">
+				<li><a id="tab0" onmouseover='MouseOverTab("0")'>我的英文名</a></li>
+				<li><a id="tab1" onmouseover='MouseOverTab("1")'>對未來的想法</a></li>
+				<li><a id="tab2" onmouseover='MouseOverTab("2")'>關於這裡</a></li>
+				<li><a id="tab3" onmouseover='MouseOverTab("3")' style="background:rgba(171, 171, 171, 0.7)">CSS2畫畫實作</a></li>
+		</ul>
 		<div class="in">
-		<div id="tabs">
-			<ul>
-				<li><a href="#tabs-1">關於我現在的英文名字</a></li>
-				<li><a href="#tabs-2">對於未來的想法</a></li>
-				<li><a href="#tabs-3">關於這個網頁</a></li>
-			</ul>
-			<div id="tabs-1" class="wrap">
+		<div id="tabs" class="tabs">
+			<div id='p0' style="display: none" class="tab wrap">
 				<h2>關於我現在的英文名字</h2>
 				<p>
 						這名字出自高一時跟同學一同組了個以 Sky 為名字結尾的團,
@@ -373,7 +88,7 @@
 						雖然沒出過甚麼神奇的任務, 但也莫名地成為了我日後的英文名字
 				</p>
 			</div>
-			<div id="tabs-2" class="wrap">
+			<div id='p1' style="display: none" class="tab wrap">
 				<h2>對於未來的想法</h2>
 				<p>
 					目前是考慮往前端發展, <del>但覺得後端賺比較多錢</del>,應該也要練後端,
@@ -381,7 +96,7 @@
 					簡單的說就是還在摸索! 努力朝網路的發展前進中~~
 				</p>
 			</div>
-			<div id="tabs-3" class="wrap">
+			<div id='p2' style="display: none" class="tab wrap">
 				<h2>關於這個網頁</h2>
 				<p>
 					其實是我親愛的直屬大大連哥但要我們做的, 就算他之後不會把這個網站放到甚麼神奇的地方,
@@ -389,8 +104,56 @@
 					我應該也會把它放到學校或系上的主機<del>佔個空間</del>, 也算是一個練習成果的感覺!
 				</p>
 			</div>
+			<div id='p3' style="display: block" class="tab wrap">
+				<h2>只用 CSS 來畫畫!</h2>
+				<div class="angle1" ></div>
+				<div class="angle2" ></div>
+				<div class="mike" onmouseover='eyeclose()' onclick='hurt()' >
+					<div class="eye">
+					<div id="eyelid" class="Eyelid"></div>
+						<div class="Cornea">
+							<div class="Pupil"></div>
+						</div>
+					</div>
+					<div class="hide"></div>
+					<div class="mouth"></div>
+				</div>
+			</div>
 		</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+	
+	function MouseOverTab(Index)
+	{   
+		var child = document.getElementById("tabs").getElementsByTagName("div");
+		var tag = document.getElementById("choice").getElementsByTagName("a");
+	    for (var i=0;i<child.length;i++)
+			child[i].style.display="none";
+	    
+		for(var i=0;i<tag.length;i++)
+			tag[i].style.background="rgba(171, 171, 171, 0.3)";
+		document.getElementById("p"+Index).style.display="block";
+		document.getElementById("tab"+Index).style.background="rgba(171, 171, 171, 0.7)";
+			
+		for (var i=4;i<child.length;i++)
+			child[i].style.display="block";
+	}
+	
+	function hurt() 
+	{
+		if(document.getElementById("eyelid").style.getPropertyValue("display")=="block")
+		{document.getElementById("eyelid").style.display="none";}
+		else if(document.getElementById("eyelid").style.getPropertyValue("display")=="none")
+		{document.getElementById("eyelid").style.display="block";}
+	}
+	
+	function eyeclose() 
+	{
+		{document.getElementById("eyelid").style.display="block";}
+	}
+	
+	
+	</script>
 </body>
 </html>

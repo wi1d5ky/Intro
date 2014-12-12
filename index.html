@@ -31,7 +31,8 @@
 	}
 	
 	@media only screen and (min-width: 1180px) {
-		div.wrap{
+		.tabs div.wrap{
+			min-height:193px;
 			margin:10px;
 			padding:10px;
 		}
@@ -39,6 +40,9 @@
 			display:none;
 		}
 	}
+	
+	.active{background:rgba(171, 171, 171, 0.7);}
+	.notactive{background:rgba(171, 171, 171, 0.3);}
 	</style>
 </head>
 <body>
@@ -73,10 +77,11 @@
 	</div>
 	<div class="container">
 		<ul id="choice" class="tabs">
-				<li><a id="tab0" onmouseover='MouseOverTab("0")'>我的英文名</a></li>
-				<li><a id="tab1" onmouseover='MouseOverTab("1")'>對未來的想法</a></li>
-				<li><a id="tab2" onmouseover='MouseOverTab("2")'>關於這裡</a></li>
-				<li><a id="tab3" onmouseover='MouseOverTab("3")' style="background:rgba(171, 171, 171, 0.7)">CSS2畫畫實作</a></li>
+				<li><a id="tab0" onmouseover='MouseOverTab("0")' class="notactive">我的英文名</a></li>
+				<li><a id="tab1" onmouseover='MouseOverTab("1")' class="notactive">對未來的想法</a></li>
+				<li><a id="tab2" onmouseover='MouseOverTab("2")' class="notactive">關於這裡</a></li>
+				<li><a id="tab3" onmouseover='MouseOverTab("3")' class="notactive">CSS3畫畫實作</a></li>
+				<li><a id="tab4" onmouseover='MouseOverTab("4")' class="active">js function</a></li>
 		</ul>
 		<div class="in">
 		<div id="tabs" class="tabs">
@@ -104,13 +109,13 @@
 					我應該也會把它放到學校或系上的主機<del>佔個空間</del>, 也算是一個練習成果的感覺!
 				</p>
 			</div>
-			<div id='p3' style="display: block" class="tab wrap">
+			<div id='p3' style="display: none" class="tab wrap">
 				<h2>只用 CSS 來畫畫!</h2>
 				<div class="angle1" ></div>
 				<div class="angle2" ></div>
 				<div class="mike" onmouseover='eyeclose()' onclick='hurt()' >
 					<div class="eye">
-					<div id="eyelid" class="Eyelid"></div>
+						<div id="eyelid" class="Eyelid"></div>
 						<div class="Cornea">
 							<div class="Pupil"></div>
 						</div>
@@ -119,6 +124,23 @@
 					<div class="mouth"></div>
 				</div>
 			</div>
+			<div id='p4' style="display: block" class="tab wrap">
+				<h2>js 回家作業</h2>
+				<div class="box">
+					<label for="num">請輸入一個數：</label> <input type="number" id="num"><br />
+					<label for="prim">輸入另一個數：</label> <input type="number" id="prim"><br />
+					<input type="button" value="大數除法!!!" onclick='cal()' id="button1">
+					<label class="ans1" id="ans1" style="display:none;"></label>
+				</div>
+				<div class="box">
+					<label for="article">輸入一篇文章：</label> <input type="text" id="article"><br />
+					<label for="char">輸入要查的字：</label> <input type="text" id="char"><br />
+					<input type="button" value="找找字元!!!" onclick='find()' id="button2"> &nbsp;
+					<label class="ans2" id="ans2" style="display:none;"></label>
+				</div>
+				<div></div>
+				
+			</div>
 		</div>
 		</div>
 	</div>
@@ -126,32 +148,60 @@
 	
 	function MouseOverTab(Index)
 	{   
-		var child = document.getElementById("tabs").getElementsByTagName("div");
-		var tag = document.getElementById("choice").getElementsByTagName("a");
-	    for (var i=0;i<child.length;i++)
-			child[i].style.display="none";
-	    
-		for(var i=0;i<tag.length;i++)
-			tag[i].style.background="rgba(171, 171, 171, 0.3)";
-		document.getElementById("p"+Index).style.display="block";
-		document.getElementById("tab"+Index).style.background="rgba(171, 171, 171, 0.7)";
-			
-		for (var i=4;i<child.length;i++)
-			child[i].style.display="block";
+		for (var i=0;i<5;i++)
+		{
+			document.getElementById("tab"+i).className =(i != +Index)? "notactive":"active";
+			document.getElementById("p"+i).style.display= (i != +Index)?"none":"block";
+		}
 	}
 	
 	function hurt() 
 	{
-		if(document.getElementById("eyelid").style.getPropertyValue("display")=="block")
-		{document.getElementById("eyelid").style.display="none";}
-		else if(document.getElementById("eyelid").style.getPropertyValue("display")=="none")
-		{document.getElementById("eyelid").style.display="block";}
+		var eye = document.getElementById("eyelid").style;
+		eye.display=eye.getPropertyValue("display")=="block"?"none":"block";
+	}
+
+	function eyeclose() {document.getElementById("eyelid").style.display="block";}
+	
+	function cal()
+	{
+		var num = +document.getElementById("num").value;
+		var botton = document.getElementById("button1");
+		var ans = document.getElementById("ans1");
+		botton.style.display="none";
+		ans.style.display="inline";
 	}
 	
-	function eyeclose() 
+	function find()
 	{
-		{document.getElementById("eyelid").style.display="block";}
+		var article = document.getElementById("article").value;
+		var ch = document.getElementById("char").value;
+		var patt = new RegExp(ch,"gim");		
+		var find = article.match(patt);
+		var ans = document.getElementById("ans2");
+		if(ans.innerHTML !== "") ans.innerHTML = "";
+		var first = true;
+		for( i in find)
+		{
+			if(!first) 
+			{
+				var dot = document.createElement("span");
+				dot.innerHTML = " , ";
+				ans.appendChild(dot);
+			}
+			first = false;
+			var tmp = document.createElement("span");
+			tmp.innerHTML = find[i];
+			ans.appendChild(tmp);
+			
+		}
+		console.log(ans);
+		var botton = document.getElementById("button2");
+		//botton.style.display="none";
+		ans.style.display="inline";
+		
 	}
+	
 	
 	
 	</script>

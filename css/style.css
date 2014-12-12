@@ -16,7 +16,6 @@ img{
 	
 body{
 	background:url('https://farm8.staticflickr.com/7582/15328861334_a973364016_c.jpg') center center no-repeat fixed;
-	-moz-background-size: cover;
 	background-size: cover;
 	color:#221D23;
 	font-family: 'Noto Sans', sans-serif;
@@ -48,7 +47,6 @@ div.header h1{
 }
 
 div.wrap{
-	//background:red;
 	display:inline-block;
 	vertical-align:top;
 	margin:10px;
@@ -84,12 +82,14 @@ ul.tabs li{
 	list-style-type:none;
 }
 ul.tabs li a{
-	background:rgba(171, 171, 171, 0.3);
 	color:#221D23;
 	cursor: grab;
 	text-decoration:none;
 	padding:10px;
 }
-
+div.box{
+	display:inline-block;
+	padding:20px 80px 20px 0px;
+}
 
 

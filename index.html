@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -127,10 +127,9 @@
 			<div id='p4' style="display: block" class="tab wrap">
 				<h2>js 回家作業</h2>
 				<div class="box">
-					<label for="num">請輸入一個數：</label> <input type="number" id="num"><br />
+					<label for="num">請輸入一個數：</label> <input type="text" id="num"><br />
 					<label for="prim">輸入另一個數：</label> <input type="number" id="prim"><br />
 					<input type="button" value="大數除法!!!" onclick='cal()' id="button1">
-					<label class="ans1" id="ans1" style="display:none;"></label>
 				</div>
 				<div class="box">
 					<label for="article">輸入一篇文章：</label> <input type="text" id="article"><br />
@@ -165,20 +164,45 @@
 	
 	function cal()
 	{
-		var num = +document.getElementById("num").value;
-		var botton = document.getElementById("button1");
-		var ans = document.getElementById("ans1");
-		botton.style.display="none";
-		ans.style.display="inline";
+		
+		var num = document.getElementById("num").value;
+		var save = num;
+		var prim = +document.getElementById("prim").value;
+		
+		if(num=="" || prim=="") 
+		{
+			alert("請先在框框中輸入數字!");
+			return ;
+		}
+		var index=0;
+		while(num.length > 9)
+		{
+			var newnum = (+(num.substring(index, index+9))%prim).toString(10);
+			for(var i = index+9;i<num.length;i++)
+				newnum += num[i];
+			num = newnum;
+		}
+		alert(save + " 除以 "+ prim +" 的餘數是 "+num%prim+" !");
 	}
 	
 	function find()
 	{
-		var article = document.getElementById("article").value;
 		var ch = document.getElementById("char").value;
+		var article = document.getElementById("article").value;
 		var patt = new RegExp(ch,"gim");		
 		var find = article.match(patt);
+		
+		if(ch=="" || article =="") 
+		{
+			alert("請先在框框中輸入一些東西!");
+			return ;
+		}
+		
+		alert("在文章中, 我找到了 "+find.length+" 個 "+ ch);
+		
+		/*
 		var ans = document.getElementById("ans2");
+		
 		if(ans.innerHTML !== "") ans.innerHTML = "";
 		var first = true;
 		for( i in find)
@@ -193,16 +217,10 @@
 			var tmp = document.createElement("span");
 			tmp.innerHTML = find[i];
 			ans.appendChild(tmp);
-			
 		}
-		console.log(ans);
-		var botton = document.getElementById("button2");
-		//botton.style.display="none";
-		ans.style.display="inline";
+		ans.style.display="inline";*/
 		
 	}
-	
-	
 	
 	</script>
 </body>
